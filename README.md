@@ -7,4 +7,4 @@ AJAX-dynamic-loading
 
 - using bootstrap for the css styling and navbar
 
-- index.js: local AJAX request and handling the response
+- index.js: local AJAX request and handling the response if a link is clicked

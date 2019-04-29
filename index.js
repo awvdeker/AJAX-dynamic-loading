@@ -1,9 +1,18 @@
+var links = document.getElementsByTagName('a');
 
-var xhr = new XMLHttpRequest();
+for (let link of links){
+  link.addEventListener('click',function(){
+    ajaxLoading(link.id+'.html');
+  });
+}
 
-xhr.onload = function () {
-  document.getElementById('contentHolder').innerHTML = xhr.responseText;
-};
+function ajaxLoading(url){
+  var xhr = new XMLHttpRequest();
 
-xhr.open('GET','one.html',true);
-xhr.send(null);
+  xhr.onload = function () {
+    document.getElementById('contentHolder').innerHTML = xhr.responseText;
+  };
+
+  xhr.open('GET',url,true);
+  xhr.send(null);
+}
