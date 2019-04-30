@@ -12,3 +12,7 @@ AJAX-dynamic-loading
 - loading icon while pages loaded: doesn't appear because loading is too fast: with setTimeout icon stays for .5 seconds
 
 - scroll up to the top of the window when link is clicked before page loading
+
+page published at:
+
+https://awvdeker.github.io/AJAX-dynamic-loading/
